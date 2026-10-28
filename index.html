@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дашковская СОШ · Серпухов · школа с 1966 года</title>
+<meta name="description" content="МОУ «Дашковская средняя общеобразовательная школа» города Серпухов: история с 1966 года, 1027 учеников, два здания в посёлке Большевик. Реклама школы и родного города.">
+<meta name="theme-color" content="#0d1b3e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1b3e'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='36' fill='%23e7ae3f' text-anchor='middle'%3E%D0%94%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --navy:#0d1b3e;
+    --navy-2:#16264f;
+    --ink:#121a35;
+    --paper:#f7f5ef;
+    --card:#ffffff;
+    --gold:#e7ae3f;
+    --gold-2:#f6d27a;
+    --sky:#3f7ae0;
+    --teal:#0e8a80;
+    --muted:#5a6480;
+    --line:#e4e1d8;
+    --shadow:0 18px 40px rgba(13,27,62,.10);
+    --radius:18px;
+    --serif:Georgia,"Times New Roman","PT Serif",serif;
+    --sans:"Segoe UI","Inter",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.62;
+    color:var(--ink);
+    background:var(--paper);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  img,svg{display:block;max-width:100%}
+  a{color:inherit}
+  a:focus-visible,.btn:focus-visible{outline:3px solid rgba(63,122,224,.55);outline-offset:3px;border-radius:10px}
+  .container{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+  .ic-svg{width:22px;height:22px;flex:none}
+
+  /* ---------- шапка ---------- */
+  .header{
+    position:sticky;top:0;z-index:60;
+    background:rgba(247,245,239,.86);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-row{display:flex;align-items:center;gap:18px;padding:11px 0}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .brand-mark{width:44px;height:44px;flex:none;border-radius:12px;overflow:hidden}
+  .brand-name{font-weight:700;font-size:15px;line-height:1.2;letter-spacing:.01em}
+  .brand-sub{display:block;font-size:10.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+  .nav{margin-left:auto;display:flex;gap:22px;font-size:14.5px;font-weight:600}
+  .nav a{text-decoration:none;color:#2a3352;position:relative;padding:4px 0}
+  .nav a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+  .nav a:hover::after{transform:scaleX(1)}
+  .author-chip{
+    display:flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;
+    color:#4a3a12;background:linear-gradient(135deg,#fbe9bf,#f4d79a);
+    border:1px solid #efd295;border-radius:999px;padding:6px 12px;white-space:nowrap
+  }
+
+  /* ---------- герой ---------- */
+  .hero{position:relative;overflow:hidden;color:#fff;
+    background:linear-gradient(158deg,#0a1530 0%,#12234b 46%,#1d3a6d 100%);
+    padding:clamp(38px,6vw,70px) 0 clamp(96px,9vw,126px);}
+  .hero::before{
+    content:"";position:absolute;inset:-20% -10% auto auto;width:min(760px,90%);aspect-ratio:1;
+    background:radial-gradient(circle at center,rgba(231,174,63,.28),rgba(231,174,63,0) 62%);
+    pointer-events:none;
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.16;
+    background-image:linear-gradient(rgba(255,255,255,.35) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.35) 1px,transparent 1px);
+    background-size:64px 64px;
+    mask-image:radial-gradient(circle at 70% 0%,#000 0%,transparent 72%);
+    -webkit-mask-image:radial-gradient(circle at 70% 0%,#000 0%,transparent 72%);
+  }
+  .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.04fr .96fr;gap:clamp(26px,4vw,58px);align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#b6c7ee}
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(231,174,63,.22)}
+  h1{
+    font-family:var(--serif);font-weight:700;letter-spacing:-.012em;
+    font-size:clamp(34px,5.2vw,62px);line-height:1.04;margin:20px 0 0;
+  }
+  h1 .grad{
+    background:linear-gradient(100deg,#f8dc95,var(--gold) 52%,#f0bd5a);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .lead{color:#d2ddf6;font-size:clamp(15.5px,1.35vw,18px);max-width:36em;margin:20px 0 0}
+  .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+    font-weight:700;font-size:15px;padding:13px 22px;border-radius:999px;
+    transition:transform .2s,box-shadow .2s,background .2s;border:1px solid transparent;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:linear-gradient(135deg,#f9e3a6,#e7ae3f 60%,#e0a232);color:#2a1e02;box-shadow:0 14px 28px rgba(231,174,63,.28)}
+  .btn-ghost{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.30);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.14)}
+  .author-note{
+    margin-top:26px;display:inline-flex;align-items:center;gap:11px;
+    padding:10px 16px 10px 14px;border-left:3px solid var(--gold);
+    background:rgba(255,255,255,.06);border-radius:0 12px 12px 0;
+    font-size:13.5px;color:#d8e2fa
+  }
+  .author-note b{color:#fff;font-weight:700}
+
+  /* иллюстрация */
+  .hero-art{position:relative}
+  .art-frame{
+    border-radius:26px;padding:14px;
+    background:linear-gradient(180deg,rgba(255,255,255,.13),rgba(255,255,255,.04));
+    border:1px solid rgba(255,255,255,.18);
+    box-shadow:0 34px 60px rgba(3,8,22,.45);
+  }
+  .art-frame svg{width:100%;height:auto;border-radius:16px}
+  .art-badge{
+    position:absolute;background:#fff;color:var(--ink);border-radius:14px;
+    padding:8px 13px;font-size:12.5px;font-weight:700;line-height:1.25;
+    box-shadow:0 14px 28px rgba(4,10,25,.38);
+    display:flex;flex-direction:column;gap:1px;
+  }
+  .art-badge small{font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .b1{top:-16px;left:-14px}
+  .b2{bottom:20px;right:-16px}
+  .b3{bottom:-18px;left:26px}
+
+  /* ---------- цифры ---------- */
+  .stats-wrap{position:relative;z-index:5;margin-top:-66px}
+  .stats{
+    background:var(--card);border-radius:22px;box-shadow:0 26px 54px rgba(13,27,62,.14);
+    display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:clamp(18px,3vw,30px) clamp(14px,2.4vw,26px);
+  }
+  .stat{padding:8px clamp(10px,1.6vw,20px);border-left:1px solid var(--line)}
+  .stat:first-child{border-left:0}
+  .stat b{display:block;font-family:var(--serif);font-size:clamp(26px,3.1vw,38px);line-height:1.05;color:var(--navy);letter-spacing:-.01em}
+  .stat span{display:block;font-size:12.8px;color:var(--muted);margin-top:5px}
+
+  /* ---------- секции ---------- */
+  section{padding:clamp(54px,7.5vw,92px) 0}
+  .kicker{display:inline-flex;align-items:center;gap:11px;font-size:11.5px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:#a07818}
+  .kicker::before{content:"";width:26px;height:2px;background:var(--gold);border-radius:2px}
+  h2{font-family:var(--serif);font-size:clamp(25px,3.4vw,40px);line-height:1.16;margin:14px 0 0;letter-spacing:-.01em;color:var(--navy)}
+  .sec-text{color:#3d4767;font-size:16.5px;max-width:62ch;margin:16px 0 0}
+  .sec-text + .sec-text{margin-top:12px}
+
+  .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(26px,4.5vw,64px);align-items:start}
+  .timeline{list-style:none;margin:6px 0 0;padding:0}
+  .timeline li{position:relative;padding:0 0 20px 30px;border-left:2px solid var(--line)}
+  .timeline li:last-child{padding-bottom:0;border-left-color:transparent}
+  .timeline li::before{
+    content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;
+    background:var(--gold);box-shadow:0 0 0 4px rgba(231,174,63,.16)
+  }
+  .timeline b{display:block;font-family:var(--serif);font-size:19px;color:var(--navy);line-height:1.2}
+  .timeline span{display:block;font-size:14.2px;color:var(--muted);margin-top:3px}
+  .timeline .now::before{background:var(--teal);box-shadow:0 0 0 4px rgba(14,138,128,.16)}
+
+  /* ---------- карточки ---------- */
+  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:clamp(24px,3.4vw,38px)}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 20px;transition:transform .25s,box-shadow .25s,border-color .25s
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#d9d3c4}
+  .ic{
+    width:46px;height:46px;border-radius:13px;display:grid;place-items:center;
+    background:rgba(63,122,224,.10);color:var(--sky);margin-bottom:14px
+  }
+  .card h3{margin:0 0 7px;font-size:16.5px;line-height:1.3;color:var(--navy)}
+  .card p{margin:0;font-size:14.3px;color:var(--muted)}
+
+  /* ---------- город ---------- */
+  .city{position:relative;overflow:hidden;color:#eaf3ef;
+    background:linear-gradient(158deg,#08211f 0%,#0f3733 52%,#14524a 100%)}
+  .city::after{
+    content:"";position:absolute;right:-120px;bottom:-160px;width:min(620px,80%);aspect-ratio:1;
+    background:radial-gradient(circle at center,rgba(231,174,63,.20),rgba(231,174,63,0) 60%);
+    pointer-events:none
+  }
+  .city .kicker{color:#e7c477}
+  .city .kicker::before{background:#e7c477}
+  .city h2{color:#fff}
+  .city .sec-text{color:#cfe2dc}
+  .city .grid-4{grid-template-columns:repeat(3,1fr)}
+  .city .card{background:rgba(255,255,255,.055);border-color:rgba(255,255,255,.14);color:#eaf3ef}
+  .city .card:hover{background:rgba(255,255,255,.09);border-color:rgba(231,174,63,.45)}
+  .city .ic{background:rgba(231,174,63,.14);color:#f0c46c}
+  .city .card h3{color:#fff}
+  .city .card p{color:#c4dad4}
+  .city-note{margin-top:22px;font-size:13.5px;color:#9fc4bb}
+
+  /* ---------- контакты ---------- */
+  .contact-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(20px,3vw,34px);margin-top:clamp(24px,3.2vw,36px);align-items:start}
+  .c-row{display:flex;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
+  .c-row:last-child{border-bottom:0}
+  .c-ic{width:38px;height:38px;flex:none;border-radius:11px;background:rgba(13,27,62,.06);color:var(--navy);display:grid;place-items:center}
+  .c-label{font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+  .c-val{font-size:15.5px;font-weight:600;color:var(--navy);line-height:1.4}
+  .c-val small{display:block;font-weight:500;font-size:13.5px;color:var(--muted)}
+  .c-val a{text-decoration:none;border-bottom:1px solid rgba(63,122,224,.35)}
+  .c-val a:hover{border-bottom-color:var(--sky);color:var(--sky)}
+
+  .cta-card{
+    background:linear-gradient(160deg,#12234b,#0d1b3e);color:#fff;border-radius:24px;
+    padding:clamp(24px,3vw,34px);box-shadow:0 26px 50px rgba(13,27,62,.22);position:relative;overflow:hidden
+  }
+  .cta-card::before{
+    content:"";position:absolute;inset:auto -60px -80px auto;width:260px;aspect-ratio:1;
+    background:radial-gradient(circle,rgba(231,174,63,.3),transparent 62%)
+  }
+  .cta-card h3{font-family:var(--serif);font-size:clamp(22px,2.6vw,28px);margin:0 0 10px;line-height:1.2;position:relative}
+  .cta-card p{margin:0 0 20px;color:#c9d5f0;font-size:14.6px;position:relative}
+  .cta-card .btn{position:relative;width:100%;justify-content:center;margin-bottom:10px}
+  .cta-card .btn-ghost{font-size:14.5px}
+  .cta-list{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px;font-size:13.6px;color:#b9c8ea;position:relative}
+  .cta-list li{display:flex;gap:9px;align-items:flex-start}
+  .cta-list svg{width:17px;height:17px;margin-top:2px;color:var(--gold);flex:none}
+
+  /* ---------- подвал ---------- */
+  .footer{background:#0b1530;color:#b9c5e4;padding:clamp(34px,4.4vw,52px) 0 30px;font-size:13.6px}
+  .footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:clamp(20px,3vw,40px)}
+  .footer h4{margin:0 0 10px;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#8194bd;font-weight:700}
+  .footer p{margin:0 0 8px;line-height:1.55}
+  .footer .f-brand{display:flex;align-items:center;gap:11px;margin-bottom:12px}
+  .footer .f-brand .brand-mark{width:38px;height:38px}
+  .footer .f-brand b{color:#fff;font-size:14.5px}
+  .footer a{color:#cfd9f0;text-decoration:none;border-bottom:1px solid rgba(207,217,240,.28)}
+  .footer a:hover{color:#fff}
+  .author-card{
+    margin-top:clamp(26px,3.4vw,40px);padding-top:20px;border-top:1px solid rgba(255,255,255,.12);
+    display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;justify-content:space-between
+  }
+  .author-card .who{display:flex;align-items:center;gap:11px;color:#e6ecfb;font-size:14px}
+  .author-card .who b{color:#fff}
+  .author-card .who .ic-badge{
+    width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
+    background:linear-gradient(135deg,#f9e3a6,#e7ae3f);color:#2a1e02
+  }
+  .author-card .meta{font-size:12.4px;color:#8fa1c9}
+
+  /* появление при прокрутке */
+  html.js .reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s cubic-bezier(.22,.7,.3,1)}
+  html.js .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    html.js .reveal{opacity:1;transform:none;transition:none}
+    .btn:hover,.card:hover{transform:none}
+  }
+
+  /* ---------- адаптив ---------- */
+  @media (max-width:1000px){
+    .nav{display:none}
+    .author-chip{margin-left:auto}
+    .hero-grid{grid-template-columns:1fr;gap:38px}
+    .hero-art{max-width:620px}
+    .about-grid{grid-template-columns:1fr}
+    .grid-4{grid-template-columns:repeat(2,1fr)}
+    .city .grid-4{grid-template-columns:repeat(2,1fr)}
+    .contact-grid{grid-template-columns:1fr}
+    .footer-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:640px){
+    .container{width:calc(100% - 28px)}
+    .header-row{gap:10px}
+    .brand-name{font-size:13.5px}
+    .brand-sub{font-size:9.5px}
+    .author-chip{font-size:11px;padding:5px 9px}
+    .stats{grid-template-columns:1fr 1fr;gap:2px;border-radius:18px}
+    .stat{border-left:0;border-top:1px solid var(--line);padding:12px 8px}
+    .stat:nth-child(-n+2){border-top:0}
+    .grid-4,.city .grid-4{grid-template-columns:1fr}
+    .b1{top:-12px;left:-6px}
+    .b2{right:-6px;bottom:12px}
+    .b3{left:10px;bottom:-14px}
+    .art-badge{font-size:11.5px;padding:7px 10px}
+    .footer-grid{grid-template-columns:1fr}
+    h1{font-size:clamp(32px,9vw,42px)}
+  }
+
+  /* ---------- печать ---------- */
+  @media print{
+    @page{size:A4;margin:12mm}
+    body{background:#fff;font-size:11pt}
+    .header,.actions,.art-badge,.cta-card .btn,.author-chip,.btn{display:none!important}
+    .hero{background:#0d1b3e!important;color:#fff!important;padding:16mm 0 10mm;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .stats-wrap{margin-top:-8mm}
+    .stats{box-shadow:none;border:1px solid var(--line)}
+    section{padding:8mm 0}
+    .card,.stats,.timeline li,.c-row{break-inside:avoid}
+    .city{background:#0f3733!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    html.js .reveal{opacity:1!important;transform:none!important}
+  }
+</style>
+</head>
+<body id="top">
+
+<!-- иконки -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-cap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2 9l10 5 10-5-10-5Z"/><path d="M6 11v4.6c0 1.7 2.7 3 6 3s6-1.3 6-3V11"/></g></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 4v3M12 17v3M4 12h3M17 12h3M6.2 6.2l2.1 2.1M15.7 15.7l2.1 2.1M17.8 6.2l-2.1 2.1M8.3 15.7l-2.1 2.1"/></g></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m16 8-4.6 8L8 16l4.6-8L16 8Z"/></g></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20S5 15.6 5 11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9Z"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.6h2.2l1.6 4-2 1.2a12 12 0 0 0 5.4 5.4l1.2-2 4 1.6V16a2.6 2.6 0 0 1-2.8 2.6C10.9 18.1 6 13.2 5.4 6.4A2.6 2.6 0 0 1 7 3.6Z"/></g></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13.5" rx="2.4"/><path d="m3.8 7 8.2 5.8L20.2 7"/></g></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.4 2.6 3.6 5.6 3.6 9s-1.2 6.4-3.6 9c-2.4-2.6-3.6-5.6-3.6-9s1.2-6.4 3.6-9Z"/></g></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.4"/><path d="m8.6 13.7-1.5 7.1 4.9-2.5 4.9 2.5-1.5-7.1"/></g></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="5" width="16.8" height="15.4" rx="2.2"/><path d="M3.6 10h16.8M8.2 3.4v3.2M15.8 3.4v3.2"/></g></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.4" cy="9" r="3.4"/><path d="M3.4 19.4c.5-3 2.8-5 6-5s5.5 2 6 5"/><circle cx="17.2" cy="8.4" r="2.5"/><path d="M15.6 14.7c2.5.2 4.2 1.8 4.8 4.4"/></g></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V6.2L12 3l8 3.2V21"/><path d="M9.6 21v-5.2h4.8V21"/><path d="M8 9.4h1.8M14.2 9.4H16M8 13h1.8M14.2 13H16"/></g></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4C10.5 4 5 9 5 15.8V20h4.4C17 20 20 14.4 20 4Z"/><path d="M5 20 16.6 7.6"/></g></symbol>
+  <symbol id="i-frame" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="4.4" width="16.8" height="15.2" rx="2.2"/><circle cx="8.8" cy="9.4" r="1.5"/><path d="m4.4 17.4 4.4-4.6 3.4 3.4 2.6-2.8 4.8 4.6"/></g></symbol>
+  <symbol id="i-crown" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m4 17.5 1.6-9 4.4 4L12 6l2 6.5 4.4-4 1.6 9Z"/><path d="M4.6 20.4h14.8"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4.6 12.6 4.7 4.6L19.4 6.6"/></g></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4.6 19.4 9 8.4 20H4v-4.4L15 4.6Z"/></g></symbol>
+  <symbol id="i-feather" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c-9 0-14 5-14 11.4V20h4.6C17 20 20 14.4 20 4Z"/><path d="M8 18 18 6"/></g></symbol>
+  <symbol id="i-wave" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 9.2c2.4-2 4.4-2 6.8 0s4.4 2 6.8 0 3.4-1.6 4.4 0"/><path d="M3 15.2c2.4-2 4.4-2 6.8 0s4.4 2 6.8 0 3.4-1.6 4.4 0"/></g></symbol>
+</svg>
+
+<header class="header">
+  <div class="container header-row">
+    <a class="brand" href="#top" aria-label="Дашковская СОШ — на главную">
+      <svg class="brand-mark" viewBox="0 0 44 44" role="img" aria-hidden="true">
+        <rect width="44" height="44" rx="12" fill="#0d1b3e"/>
+        <path d="M22 8 8 15l14 7 14-7-14-7Z" fill="#e7ae3f"/>
+        <path d="M12 19v7.5c0 2.6 4.5 4.5 10 4.5s10-1.9 10-4.5V19" fill="none" stroke="#f6d27a" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      <span>
+        <span class="brand-name">Дашковская СОШ</span>
+        <span class="brand-sub">Серпухов · с 1966</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Разделы страницы">
+      <a href="#about">История</a>
+      <a href="#why">Почему мы</a>
+      <a href="#city">Серпухов</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <span class="author-chip" title="Автор проекта">Быстров С. А. · 11 «А»</span>
+  </div>
+</header>
+
+<!-- ================= ГЕРОЙ ================= -->
+<div class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow"><span class="dot"></span>Муниципальное общеобразовательное учреждение · пос. Большевик</p>
+      <h1>Дашковская<br><span class="grad">средняя школа</span></h1>
+      <p class="lead">
+        Школа, где 1 сентября 1966 года началась история длиной уже в шестьдесят лет.
+        Здесь учатся, дружат и находят своё будущее — в двух зданиях на улице Ленина,
+        в самом сердце посёлка Большевик.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#contacts">
+          <svg class="ic-svg" width="19" height="19" aria-hidden="true"><use href="#i-pin"/></svg>
+          Как нас найти
+        </a>
+        <a class="btn btn-ghost" href="tel:+74967128396">
+          <svg class="ic-svg" width="19" height="19" aria-hidden="true"><use href="#i-phone"/></svg>
+          8 (4967) 128-396
+        </a>
+      </div>
+      <div class="author-note">
+        <svg class="ic-svg" width="19" height="19" aria-hidden="true" style="color:#f6d27a"><use href="#i-pen"/></svg>
+        <span>Проект-реклама выполнил: <b>Быстров Станислав Алексеевич, 11 «А» класс</b></span>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="art-frame">
+        <!-- иллюстрация: школа в посёлке -->
+        <svg viewBox="0 0 560 440" role="img" aria-label="Иллюстрация: здание Дашковской школы, флаг и деревья">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#cfe0ff"/>
+              <stop offset="1" stop-color="#eef4ff"/>
+            </linearGradient>
+            <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#fffaf0"/>
+              <stop offset="1" stop-color="#f2e8d5"/>
+            </linearGradient>
+            <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#22365f"/>
+              <stop offset="1" stop-color="#152647"/>
+            </linearGradient>
+          </defs>
+
+          <rect width="560" height="440" rx="18" fill="url(#sky)"/>
+          <circle cx="468" cy="82" r="38" fill="#f6d27a" opacity=".95"/>
+          <circle cx="468" cy="82" r="56" fill="#f6d27a" opacity=".22"/>
+
+          <g fill="#ffffff" opacity=".85">
+            <rect x="52" y="66" width="96" height="26" rx="13"/>
+            <rect x="88" y="44" width="60" height="24" rx="12"/>
+            <rect x="330" y="118" width="112" height="24" rx="12"/>
+            <rect x="366" y="98" width="54" height="22" rx="11"/>
+          </g>
+
+          <rect y="330" width="560" height="110" fill="#dfe9d6"/>
+          <path d="M0 330h560v14H0z" fill="#cfdcc2"/>
+          <path d="M40 440c30-46 66-58 120-56l300-6c50-2 82 12 100 62Z" fill="#e9efdf" opacity=".85"/>
+
+          <!-- деревья -->
+          <g>
+            <rect x="52" y="292" width="9" height="48" rx="4" fill="#8b6a49"/>
+            <circle cx="56" cy="278" r="34" fill="#7fae74"/>
+            <circle cx="34" cy="292" r="22" fill="#8fb981"/>
+            <rect x="500" y="286" width="9" height="54" rx="4" fill="#8b6a49"/>
+            <circle cx="505" cy="270" r="36" fill="#79a86f"/>
+            <circle cx="528" cy="288" r="21" fill="#8dbd80"/>
+          </g>
+
+          <!-- корпус школы -->
+          <rect x="96" y="196" width="368" height="150" rx="8" fill="url(#wall)"/>
+          <path d="M78 198 280 118l202 80Z" fill="url(#roof)"/>
+          <rect x="70" y="192" width="420" height="9" rx="3" fill="#1b2d52"/>
+
+          <!-- центральный ризалит -->
+          <rect x="232" y="150" width="96" height="196" fill="#fdf6e7" stroke="#e6d9bf" stroke-width="2"/>
+          <path d="M222 152 280 116l58 36Z" fill="#1d3057"/>
+          <circle cx="280" cy="146" r="13" fill="#f6d27a" stroke="#c8962f" stroke-width="2"/>
+          <circle cx="280" cy="146" r="6" fill="#1d3057"/>
+
+          <!-- окна -->
+          <g fill="#b9cdee" stroke="#22365f" stroke-width="2">
+            <rect x="118" y="222" width="46" height="40" rx="3"/>
+            <rect x="182" y="222" width="34" height="40" rx="3"/>
+            <rect x="344" y="222" width="34" height="40" rx="3"/>
+            <rect x="396" y="222" width="46" height="40" rx="3"/>
+            <rect x="118" y="286" width="46" height="40" rx="3"/>
+            <rect x="182" y="286" width="34" height="40" rx="3"/>
+            <rect x="344" y="286" width="34" height="40" rx="3"/>
+            <rect x="396" y="286" width="46" height="40" rx="3"/>
+            <rect x="248" y="196" width="30" height="34" rx="3"/>
+            <rect x="284" y="196" width="30" height="34" rx="3"/>
+          </g>
+          <g stroke="#22365f" stroke-width="1.6" opacity=".55">
+            <path d="M141 222v40M200 222v40M361 222v40M419 222v40M141 286v40M200 286v40M361 286v40M419 286v40"/>
+            <path d="M118 242h46M182 242h34M344 242h34M396 242h46M118 306h46M182 306h34M344 306h34M396 306h46"/>
+          </g>
+
+          <!-- табличка с годом над входом -->
+          <g>
+            <rect x="252" y="238" width="56" height="20" rx="4" fill="#e7ae3f"/>
+            <text x="280" y="252" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" font-weight="700" fill="#22365f" text-anchor="middle" letter-spacing="1.4">1966</text>
+          </g>
+
+          <!-- вход -->
+          <rect x="248" y="266" width="66" height="80" fill="#22365f" rx="4"/>
+          <rect x="256" y="274" width="50" height="64" fill="#cfe0ff" opacity=".85"/>
+          <rect x="248" y="352" width="66" height="10" fill="#e6d9bf"/>
+          <path d="M236 352h92" stroke="#d9caa8" stroke-width="4"/>
+
+          <!-- флаг -->
+          <rect x="472" y="150" width="5" height="196" rx="2.5" fill="#8b9ab8"/>
+          <g>
+            <rect x="477" y="152" width="62" height="13" fill="#ffffff"/>
+            <rect x="477" y="165" width="62" height="13" fill="#3f6fbf"/>
+            <rect x="477" y="178" width="62" height="13" fill="#d4574e"/>
+          </g>
+
+          <!-- облака поверх, для глубины -->
+          <g fill="#ffffff" opacity=".7">
+            <rect x="196" y="86" width="70" height="20" rx="10"/>
+            <rect x="222" y="72" width="40" height="18" rx="9"/>
+          </g>
+        </svg>
+      </div>
+      <div class="art-badge b1"><small>Год основания</small>1966</div>
+      <div class="art-badge b2"><small>Учеников</small>1 027</div>
+      <div class="art-badge b3"><small>Здания</small>2 · ул. Ленина</div>
+    </div>
+  </div>
+</div>
+
+<!-- цифры -->
+<div class="container stats-wrap">
+  <div class="stats reveal">
+    <div class="stat"><b>1966</b><span>год открытия школы</span></div>
+    <div class="stat"><b>1 027</b><span>учеников сегодня</span></div>
+    <div class="stat"><b>66</b><span>педагогов и сотрудников</span></div>
+    <div class="stat"><b>60</b><span>лет школьной истории</span></div>
+  </div>
+</div>
+
+<!-- ================= ИСТОРИЯ ================= -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="kicker">О школе</p>
+        <h2>Школа с историей и характером</h2>
+        <p class="sec-text">
+          Наша школа выросла из старинного села Березняк-Дашковка, что стоит на старом
+          Тарусско-Боровском тракте. Эти земли когда-то принадлежали Екатерине Романовне
+          Дашковой — из рода Воронцовых, известного ещё со времён Ивана Грозного.
+        </p>
+        <p class="sec-text">
+          В 1929 году здесь появился один из крупнейших совхозов Московской области —
+          «Большевик», а 1 сентября 1966 года распахнула двери школа, получившая имя
+          по деревне Дашковка. С тех пор 1 сентября для наших ребят — не просто дата
+          в календаре, а начало большого пути.
+        </p>
+        <p class="sec-text">
+          Сегодня в школе 1 027 учеников и 66 сотрудников, два здания на улице Ленина
+          и одна общая история длиной в шестьдесят лет. Мы учим не только ради оценок —
+          ради людей, которые вырастают здесь и остаются жить в родном Серпухове.
+        </p>
+      </div>
+
+      <div class="reveal">
+        <p class="kicker">Наша хронология</p>
+        <ol class="timeline">
+          <li><b>1929</b><span>Совхоз «Большевик» — один из крупнейших в Подмосковье; так называется будущий посёлок школы.</span></li>
+          <li><b>1966</b><span>1 сентября открывается Дашковская школа, названная по деревне Дашковка.</span></li>
+          <li><b>2008</b><span>Школа — победитель приоритетного национального проекта «Образование».</span></li>
+          <li><b>2009</b><span>Включена в национальный реестр «Ведущие образовательные учреждения России».</span></li>
+          <li><b>2013</b><span>Победитель областного конкурса инновационных проектов и конкурса «Наше Подмосковье».</span></li>
+          <li class="now"><b>2026</b><span>Юбилейный год: школе исполняется 60 лет.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ПОЧЕМУ МЫ ================= -->
+<section id="why" style="padding-top:0">
+  <div class="container">
+    <div class="reveal">
+      <p class="kicker">Почему именно мы</p>
+      <h2>Учиться здесь — значит расти</h2>
+    </div>
+    <div class="grid-4 reveal">
+      <article class="card">
+        <div class="ic"><svg class="ic-svg" width="24" height="24" aria-hidden="true"><use href="#i-users"/></svg></div>
+        <h3>Наставники, а не просто учителя</h3>
+        <p>Педагоги, которые знают каждого ученика по имени и помогают найти сильные стороны — от первого класса до выпускных экзаменов.</p>
+      </article>
+      <article class="card">
+        <div class="ic"><svg class="ic-svg" width="24" height="24" aria-hidden="true"><use href="#i-compass"/></svg></div>
+        <h3>Понятный путь</h3>
+        <p>Начальная, основная и старшая школа в одном месте: от первого звонка до аттестата — без лишних переходов и переездов.</p>
+      </article>
+      <article class="card">
+        <div class="ic"><svg class="ic-svg" width="24" height="24" aria-hidden="true"><use href="#i-heart"/></svg></div>
+        <h3>Здесь есть своё дело</h3>
+        <p>Кружки, секции, школьные праздники и самоуправление — каждому найдётся занятие по душе и компания по интересам.</p>
+      </article>
+      <article class="card">
+        <div class="ic"><svg class="ic-svg" width="24" height="24" aria-hidden="true"><use href="#i-pin"/></svg></div>
+        <h3>Рядом с домом</h3>
+        <p>Школа в шаговой доступности для жителей посёлка Большевик и Дашковки: дорога до уроков занимает минуты, а не часы.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ГОРОД ================= -->
+<section class="city" id="city">
+  <div class="container">
+    <div class="reveal">
+      <p class="kicker">Наш город</p>
+      <h2>Серпухов — город, в котором мы живём</h2>
+      <p class="sec-text">
+        Школа стоит в посёлке Большевик, но мы — часть большого города. Серпухов старше
+        Москвы не по возрасту, а по духу: княжество, крепость на Оке, купеческие усадьбы
+        и павлины на гербе. Вот почему здесь стоит учиться и жить.
+      </p>
+    </div>
+    <div class="grid-4 reveal">
+      <article class="card">
+        <div class="ic"><svg class="ic-svg" width="24" height="24" aria-hidden="true"><use href="#i-crown"/></svg></div>
+        <h3>1339 год</h3>
+        <p>Первое упоминание города. На Соборной горе стоял кремль — сначала дубовый (1374), потом белокаменный (1556).</p>
+      </article>
+      <article class="card">
+        <div class="ic"><svg class="ic-svg" width="24" height="24" aria-hidden="true"><use href="#i-pin"/></svg></div>
+        <h3>100 км от Москвы</h3>
+        <p>Серпухов — южный рубеж Подмосковья. От Московского Кремля до Соборной горы ровно сто километров.</p>
+      </article>
+      <article class="card">
+        <div class="ic"><svg class="ic-svg" width="24" height="24" aria-hidden="true"><use href="#i-feather"/></svg></div>
+        <h3>Город павлинов</h3>
+        <p>Павлин — символ Серпухова и его герба. Птиц разводят во Владычном монастыре, а в городе есть музей павлина.</p>
+      </article>
+      <article class="card">
+        <div class="ic"><svg class="ic-svg" width="24" height="24" aria-hidden="true"><use href="#i-frame"/></svg></div>
+        <h3>«Малая Третьяковка»</h3>
+        <p>Серпуховский историко-художественный музей — одно из лучших собраний живописи Подмосковья в купеческой усадьбе.</p>
+      </article>
+      <article class="card">
+        <div class="ic"><svg class="ic-svg" width="24" height="24" aria-hidden="true"><use href="#i-building"/></svg></div>
+        <h3>Монастыри XIV века</h3>
+        <p>Высоцкий (1374) и Владычный (1360) монастыри — сердце исторического центра и любимые места прогулок.</p>
+      </article>
+      <article class="card">
+        <div class="ic"><svg class="ic-svg" width="24" height="24" aria-hidden="true"><use href="#i-wave"/></svg></div>
+        <h3>Зубры и Ока</h3>
+        <p>За рекой — Приокско-Террасный заповедник, где живут зубры. Ока, сосновые боры и 108 памятников истории.</p>
+      </article>
+    </div>
+    <p class="city-note">Серпухов — «Населённый пункт воинской доблести» (2016). Здесь бывал и работал А. П. Чехов, а железная дорога соединила город с Москвой ещё в 1866 году.</p>
+  </div>
+</section>
+
+<!-- ================= КОНТАКТЫ ================= -->
+<section id="contacts">
+  <div class="container">
+    <div class="reveal">
+      <p class="kicker">Контакты</p>
+      <h2>Приходите знакомиться</h2>
+      <p class="sec-text">
+        Мы открыты для будущих учеников и их родителей. Позвоните, напишите или просто
+        зайдите — покажем школу, классы и спортивный зал, ответим на вопросы.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="c-row">
+          <div class="c-ic"><svg class="ic-svg" width="20" height="20" aria-hidden="true"><use href="#i-pin"/></svg></div>
+          <div>
+            <div class="c-label">Адрес</div>
+            <div class="c-val">142253, Московская область, г. о. Серпухов, пос. Большевик, ул. Ленина, стр. 40/1
+              <small>Здание № 1 — ул. Ленина, д. 40 · Здание № 2 — ул. Ленина, д. 40/1</small>
+            </div>
+          </div>
+        </div>
+        <div class="c-row">
+          <div class="c-ic"><svg class="ic-svg" width="20" height="20" aria-hidden="true"><use href="#i-phone"/></svg></div>
+          <div>
+            <div class="c-label">Телефон</div>
+            <div class="c-val"><a href="tel:+74967128396">8 (4967) 128-396</a></div>
+          </div>
+        </div>
+        <div class="c-row">
+          <div class="c-ic"><svg class="ic-svg" width="20" height="20" aria-hidden="true"><use href="#i-mail"/></svg></div>
+          <div>
+            <div class="c-label">Электронная почта</div>
+            <div class="c-val"><a href="mailto:dashkovkaschool@mail.ru">dashkovkaschool@mail.ru</a></div>
+          </div>
+        </div>
+        <div class="c-row">
+          <div class="c-ic"><svg class="ic-svg" width="20" height="20" aria-hidden="true"><use href="#i-globe"/></svg></div>
+          <div>
+            <div class="c-label">Сайт школы</div>
+            <div class="c-val"><a href="http://www.dashkovsk-serp.edusite.ru/" target="_blank" rel="noopener">dashkovsk-serp.edusite.ru</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-card reveal">
+        <h3>Школа ждёт вас</h3>
+        <p>Дашковская СОШ — это место, где из первоклассника вырастает выпускник. Приходите — расскажем всё лично.</p>
+        <a class="btn btn-primary" href="tel:+74967128396">
+          <svg class="ic-svg" width="18" height="18" aria-hidden="true"><use href="#i-phone"/></svg>
+          Позвонить в школу
+        </a>
+        <a class="btn btn-ghost" href="mailto:dashkovkaschool@mail.ru">
+          <svg class="ic-svg" width="18" height="18" aria-hidden="true"><use href="#i-mail"/></svg>
+          Написать письмо
+        </a>
+        <ul class="cta-list">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Два здания на улице Ленина — начальная и старшая школа</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Работаем по программам ФГОС, готовим к ОГЭ и ЕГЭ</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Школа — участник проекта «Школьный портал Московской области»</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ПОДВАЛ ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="f-brand">
+          <svg class="brand-mark" viewBox="0 0 44 44" role="img" aria-hidden="true">
+            <rect width="44" height="44" rx="12" fill="#16264f"/>
+            <path d="M22 8 8 15l14 7 14-7-14-7Z" fill="#e7ae3f"/>
+            <path d="M12 19v7.5c0 2.6 4.5 4.5 10 4.5s10-1.9 10-4.5V19" fill="none" stroke="#f6d27a" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+          <b>МОУ «Дашковская СОШ»</b>
+        </div>
+        <p>Средняя общеобразовательная школа городского округа Серпухов. Открыта 1 сентября 1966 года.</p>
+        <p>Пос. Большевик, ул. Ленина, 40/1 · 8 (4967) 128-396</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <p><a href="#about">История школы</a></p>
+        <p><a href="#why">Почему мы</a></p>
+        <p><a href="#city">Город Серпухов</a></p>
+        <p><a href="#contacts">Контакты</a></p>
+      </div>
+      <div>
+        <h4>Источники</h4>
+        <p>Школьный портал Московской области<br><a href="https://schools.school.mosreg.ru/v2/school?school=37524" target="_blank" rel="noopener">schools.school.mosreg.ru</a></p>
+        <p>Сведения о городе — открытые источники</p>
+      </div>
+    </div>
+
+    <div class="author-card">
+      <div class="who">
+        <span class="ic-badge"><svg class="ic-svg" width="18" height="18" aria-hidden="true"><use href="#i-pen"/></svg></span>
+        <span>Выполнил: <b>Быстров Станислав Алексеевич, 11 «А» класс</b></span>
+      </div>
+      <div class="meta">Учебный проект · одностраничный сайт-реклама · 2026 год</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.documentElement.classList.add('js');
+  (function () {
+    var items = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      for (var i = 0; i < items.length; i++) items[i].classList.add('in');
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+</body>
+</html>
